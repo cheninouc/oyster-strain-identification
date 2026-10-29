@@ -389,7 +389,7 @@ def main():
         description='one-vs-rest Elastic Net 稳定筛选（S1.2）')
     p.add_argument('--indir', required=True, help='step1 输出目录（含 {strain}_top*.tsv）')
     p.add_argument('--raw', help='plink --recode A 生成的 .raw 基因型文件')
-    p.add_argument('--pop', help='sample_pop（IID\\\\tPOP）')
+    p.add_argument('--pop', help='sample_pop（IID\\tPOP）')
     p.add_argument('--strains', nargs='+', default=['CF', 'JF', 'KF', 'SB', 'SG', 'SO', 'SW'])
     p.add_argument('--only-strain', metavar='S',
                    help='只处理这一个品系（用于 7 品系并行；不写合并结果）')
